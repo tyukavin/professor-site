@@ -1,3 +1,8 @@
+$mid-gray: #8D8D8D;
+$dark-gray: #5F5F5F;
+$light-gray: #F3F3F3;
+$green: #5F8D6E;
+
 @mixin font-face($name, $file, $weight: 400, $style: normal) {
 	@font-face {
 		font-family: "#{$name}";

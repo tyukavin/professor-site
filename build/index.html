@@ -1,4 +1,33 @@
-<header class="header container">
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Описание центра">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Медицинский центр Профессор</title>
+</head>
+
+
+<body>
+    <header class="header container">
 	<div class="header-logo">
 		<a href="/" class="header-logo__img" title="На Главную">
 			<img src="/img/logo.png" alt="Логотип Медицинского центра Профессор">
@@ -33,7 +62,9 @@
 				</ul>
 			</nav>
 			<button class="btn btn--icon">
-				@@include('_svg-icon.html', { "name": "fa_eye" })
+				<svg class="icon">
+	<use xlink:href="/img/sprite.svg#fa_eye"/>
+</svg>
 			</button>
 		</div>
 
@@ -42,13 +73,17 @@
 				<form action="">
 					<div class="input-group">
 						<input type="text">
-						@@include('_svg-icon.html', { "name": "fa_search" })
+						<svg class="icon">
+	<use xlink:href="/img/sprite.svg#fa_search"/>
+</svg>
 					</div>
 				</form>
 			</div>
 			<div class="info-menu-contact">
 				<div class="info-menu-contact__item">
-					@@include('_svg-icon.html', { "name": "fa_mail" })
+					<svg class="icon">
+	<use xlink:href="/img/sprite.svg#fa_mail"/>
+</svg>
 					<div class="info-menu-contact__main">
 						<div class="info-menu-contact__caption">
 							<a href="mailto:zapis@mcprofessor.ru">zapis@mcprofessor.ru</a>
@@ -56,14 +91,18 @@
 					</div>
 				</div>
 				<div class="info-menu-contact__item">
-					@@include('_svg-icon.html', { "name": "fa_map" })
+					<svg class="icon">
+	<use xlink:href="/img/sprite.svg#fa_map"/>
+</svg>
 					<div class="info-menu-contact__main">
 						<div class="info-menu-contact__desc">м. Чернышевская</div>
 						<div class="info-menu-contact__caption">ул. Чайковского, 42</div>
 					</div>
 				</div>
 				<div class="info-menu-contact__item">
-					@@include('_svg-icon.html', { "name": "fa_mail" })
+					<svg class="icon">
+	<use xlink:href="/img/sprite.svg#fa_mail"/>
+</svg>
 					<div class="info-menu-contact__main">
 						<div class="info-menu-contact__desc">Время работы</div>
 						<div class="info-menu-contact__caption">пн-пт: 9-21, сб: 9-20, вс: 9-19</div>
@@ -72,13 +111,19 @@
 			</div>
 			<div class="info-menu-social">
 				<a href="javascript;" class="link-icon" title="Telegram">
-					@@include('_svg-icon.html', { "name": "telegram" })
+					<svg class="icon">
+	<use xlink:href="/img/sprite.svg#telegram"/>
+</svg>
 				</a>
 				<a href="javascript;" class="link-icon" title="Viber">
-					@@include('_svg-icon.html', { "name": "viber" })
+					<svg class="icon">
+	<use xlink:href="/img/sprite.svg#viber"/>
+</svg>
 				</a>
 				<a href="javascript;" class="link-icon" title="Whats App">
-					@@include('_svg-icon.html', { "name": "whatsapp" })
+					<svg class="icon">
+	<use xlink:href="/img/sprite.svg#whatsapp"/>
+</svg>
 				</a>
 			</div>
 			<div class="info-menu-phones">
@@ -90,3 +135,13 @@
 		<div class="primary-menu"></div>
 	</div>
 </header>
+
+    <main class="main"></main>
+    <footer class="footer"></footer>
+
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
