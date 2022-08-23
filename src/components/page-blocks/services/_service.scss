@@ -1,0 +1,51 @@
+.services {
+	padding: 93px 0 35px;
+	background-image: url(../img/bg-flowers.png);
+	background-position: center right;
+	background-repeat: no-repeat;
+}
+
+.service-tabs {
+	display: flex;
+	align-items: center;
+}
+
+.service-tab {
+	border: 1px solid $dark-gray;
+	cursor: pointer;
+	color: $dark-gray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 25%;
+	min-height: 73px;
+
+	&.is-active {
+		background-color: $green;
+		color: #fff;
+		cursor: default;
+	}
+
+	&:not(:last-child) {
+		border-right: none;
+	}
+
+	.icon {
+		fill: currentColor;
+		height: 36px;
+		width: 36px;
+		margin-right: 10px;
+	}
+}
+
+.service-content {
+	border: 1px solid $dark-gray;
+	border-top: none;
+	padding: 35px 0;
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

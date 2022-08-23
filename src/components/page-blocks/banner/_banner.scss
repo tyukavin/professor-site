@@ -1,0 +1,43 @@
+.banner {
+	min-height: 215px;
+	background-color: $orange;
+	position: relative;
+
+	&::after {
+		content: '';
+		height: 2px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		bottom: 24px;
+	}
+
+	&-content {
+		position: relative;
+		min-height: 215px;
+		padding-left: 30%;
+		padding-right: 10px;
+		padding-top: 43px;
+		padding-bottom: 67px;
+		display: flex;
+		justify-content: center;
+
+		&__img {
+			position: absolute;
+			bottom: 5px;
+			left: -4.5%;
+			z-index: 1;
+		}
+
+		&__desc {
+			color: #fff;
+			font-family: "Rubik-Italic", sans-serif;
+			font-size: 22px;
+			font-weight: 400;
+			text-align: center;
+			line-height: 35px;
+			text-transform: uppercase;
+		}
+	}
+}

@@ -1,0 +1,133 @@
+.benefits {
+	padding: 93px 0 50px;
+	background-image: url(../img/ben-bg.png);
+	background-position: center 540px;
+	background-repeat: no-repeat;
+
+	&-content {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 93px;
+
+		&__item {
+			padding: 0 60px;
+			width: calc(100% / 3);
+
+			&:first-child,
+			&:nth-child(4) {
+				padding-left: 0;
+			}
+
+			&:nth-child(3n+2) {
+				border: 1px solid $bege;
+				border-top: none;
+				border-bottom: none;
+			}
+
+			&:nth-child(-n+3) {
+				padding-bottom: 36px;
+			}
+
+			&:nth-child(n+4) {
+				padding-top: 36px;
+			}
+
+			.icon {
+				height: 85px;
+				width: 70px;
+				margin-bottom: 16px;
+			}
+		}
+
+		&__title {
+			color: $dark-gray;
+			font-size: 16px;
+			font-weight: 600;
+			margin-bottom: 8px;
+			text-transform: uppercase;
+		}
+
+		&__desc {
+			line-height: 22px;
+		}
+	}
+}
+
+.spec-slider {
+	display: flex;
+	gap: 53px;
+	margin-bottom: 50px;
+
+	&__item {
+		flex: 1 1 auto;
+	}
+
+	&__img {
+		min-height: 360px;
+		background-image: url(../img/doc-bg.png);
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin-bottom: 24px;
+
+		img {
+			vertical-align: bottom;
+		}
+	}
+
+	&__caption {
+		color: $green;
+		font-size: 20px;
+		margin-bottom: 7px;
+
+		strong {
+			display: block;
+			text-transform: uppercase;
+			margin-bottom: 2px;
+		}
+	}
+
+	&__desc {
+		font-size: 18px;
+		padding-bottom: 16px;
+
+		&::after {
+			content: '';
+			background-color: $mid-gray;
+			height: 1px;
+			width: 79px;
+			display: block;
+			margin-top: 16px;
+		}
+	}
+
+	&__sub {
+		color: $mid-gray;
+		font-size: 14px;
+	}
+}
+
+.tour {
+	min-height: 633px;
+	background-color: $green;
+	padding: 53px 24px 24px;
+	position: relative;
+
+	&-head {
+		color: #fff;
+		font-family: "Elisabethische", serif;
+		font-size: 36px;
+		text-transform: uppercase;
+		position: absolute;
+		left: 50%;
+		top: 35px;
+		transform: translateX(-50%);
+		padding: 0 38px;
+		background-color: $green;
+	}
+
+	&-content {
+		border: 1px solid #fff;
+		padding: 37px 24px 24px;
+	}
+}
