@@ -98,6 +98,11 @@ button {
 		padding-top: 19px;
 		padding-bottom: 19px;
 		text-align: center;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 	&--primary {
