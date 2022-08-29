@@ -1,4 +1,6 @@
-const plugins = [];
+const plugins = [
+	"src/components/**/swiper-bundle.min.css"
+];
 
 const {
 	src,

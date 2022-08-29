@@ -1,0 +1,107 @@
+.info {
+	background-color: #F3F3F3;
+	padding: 50px 0;
+	color: #4F4F4F;
+	background-image: url(../img/licence-bg.png);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	@include _640 {
+		background-size: 150%;
+		background-position: center bottom;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -17px;
+	}
+
+	&__col {
+		padding: 0 17px;
+		width: 50%;
+		@include _640 {
+			width: 100%;
+		}
+
+		&--license {
+			order: 2;
+		}
+
+		&--text {
+			order: 1;
+		}
+	}
+
+	&__caption {
+		margin-top: 45px;
+		font-size: 20px;
+		font-weight: 600;
+		@include _640 {
+			margin-top: 24px;
+			font-size: 18px;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		margin-top: 16px;
+		@include _640 {
+			font-size: 16px;
+		}
+	}
+
+	&-list {
+		padding: 0;
+		list-style: none;
+		width: 80%;
+		@include _640 {
+			width: 100%;
+		}
+
+		li {
+			margin-bottom: 16px;
+			position: relative;
+			padding-left: 34px;
+			padding-right: 20px;
+			@include _640 {
+				font-size: 14px;
+			}
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: -1px;
+				left: 0;
+				height: 24px;
+				width: 24px;
+				background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuNDU1MjIgMTcuOTA5OEM4LjcwNDI3IDE4LjgyODUgMTAuNzMwNCAyMC4yMjU1IDEyLjM5MjcgMjJDMTQuMTEzNiAyMC4xNjMxIDE2LjIyNDYgMTguNzMxNSAxOC41Njg4IDE3LjgxNTZDMTguODM2MSAxNi43OTc2IDE5IDE1LjcxNTYgMTkgMTQuNTg4QzE5IDguNDEzNTkgMTIuNSAyIDEyLjUgMkMxMi41IDIgNiA4LjQxMzczIDYgMTQuNTg4QzYuMDAwMTQgMTUuNzUwMiA2LjE3MzE5IDE2Ljg2NDcgNi40NTUyMiAxNy45MDk4WiIgZmlsbD0iIzVGOEQ2RSIvPgo8L3N2Zz4K");
+			}
+		}
+	}
+
+	&-quote {
+		background-color: #fff;
+		margin-top: 36px;
+		padding: 36px;
+		display: flex;
+		align-items: center;
+		gap: 36px;
+		font-style: italic;
+		@include _640 {
+			padding: 16px;
+			font-size: 14px;
+			gap: 16px;
+			margin-top: 24px;
+			margin-bottom: 50px;
+		}
+	}
+
+	.collage {
+		display: inline-block;
+		max-width: 700px;
+		@include _640 {
+			width: 100%;
+		}
+	}
+}

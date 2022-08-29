@@ -8,7 +8,9 @@ const sprite = require('gulp-svg-sprite');
 module.exports = function svg_sprite() {
 	return src('src/svg/**/*.svg')
 		.pipe(svgmin({
-			plugins: [{
+			plugins: [
+				{ mergePaths: false },
+				{
 					removeComments: true
 				},
 				{

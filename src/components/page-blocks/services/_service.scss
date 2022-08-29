@@ -3,15 +3,29 @@
 	background-image: url(../img/bg-flowers.png);
 	background-position: center right;
 	background-repeat: no-repeat;
+	@include _640 {
+		padding: 50px 0;
+		background-image: none;
+	}
+
+	.container {
+		@include _640 {
+			padding-right: 0;
+		}
+	}
 }
 
 .service-tabs {
 	display: flex;
 	align-items: center;
+	@include _640 {
+		overflow-x: auto;
+	}
 }
 
 .service-tab {
 	border: 1px solid $dark-gray;
+	background-color: #fff;
 	cursor: pointer;
 	color: $dark-gray;
 	display: flex;
@@ -19,6 +33,15 @@
 	justify-content: center;
 	flex: 1 1 25%;
 	min-height: 73px;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	@include _640 {
+		min-height: 60px;
+		padding-left: 32px;
+		padding-right: 24px;
+		white-space: nowrap;
+	}
 
 	&.is-active {
 		background-color: $green;
@@ -41,11 +64,102 @@
 .service-content {
 	border: 1px solid $dark-gray;
 	border-top: none;
-	padding: 35px 0;
+	padding: 15px 16px 35px;
+
+	&__item {
+		margin-bottom: 20px;
+		display: none;
+		@include _640 {
+			flex-direction: column;
+			max-height: 240px;
+			overflow-y: auto;
+		}
+
+		&.is-active {
+			display: flex;
+		}
+	}
+
+	&__col {
+		flex: 0 0 20%;
+	}
 
 	&__actions {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@include _640 {
+			width: 100%;
+
+			.btn {
+				width: 100%;
+				height: 66px;
+			}
+		}
+	}
+}
+
+.list-service {
+	padding: 0;
+	list-style: none;
+
+	&__item {
+		position: relative;
+
+		&::after {
+			content: '';
+			background-color: $light-gray;
+			height: 1px;
+			width: 80%;
+			position: absolute;
+			bottom: 0;
+			@include _640 {
+				width: 100%;
+			}
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+				@include _640 {
+					display: block;
+				}
+			}
+		}
+
+		a {
+			display: flex;
+			align-items: flex-start;
+			font-weight: 600;
+			padding: 20px 0;
+			padding-right: 35px;
+			@include _640 {
+				padding: 11px 0;
+				font-size: 14px;
+			}
+
+			&:hover {
+				color: $green;
+				text-decoration: none;
+			}
+
+			span {
+				transform: translateY(8px);
+				@include _640 {
+					transform: translateY(3px);
+				}
+			}
+		}
+
+		.icon {
+			height: 36px;
+			width: 36px;
+			margin-right: 16px;
+			flex: none;
+			@include _640 {
+				height: 24px;
+				width: 24px;
+			}
+		}
 	}
 }

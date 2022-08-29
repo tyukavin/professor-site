@@ -13,6 +13,7 @@ body {
 	background-color: #fff;
 	color: $dark-gray;
 	font-family: Rubik, sans-serif;
+	line-height: 1.4;
 	min-height: 100%;
 	position: relative;
 }
@@ -41,13 +42,23 @@ h4,
 h5,
 h6 {
 	font-family: "Elisabethische", serif;
+	font-weight: 400;
+	position: relative;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 60px;
+	@include _640 {
+		font-size: 36px;
+	}
 }
 
 h2 {
 	font-size: 36px;
-	font-weight: 400;
-	position: relative;
-	text-transform: uppercase;
+	@include _640 {
+		font-size: 24px;
+	}
 }
 
 .headline {
@@ -68,6 +79,9 @@ h2 {
 	font-weight: 400;
 	position: relative;
 	text-transform: uppercase;
+	@include _640 {
+		font-size: 24px;
+	}
 
 	&::before {
 		content: '';
@@ -79,6 +93,9 @@ h2 {
 		background-image: url(../img/star.png);
 		background-repeat: no-repeat;
 		background-position: center;
+		@include _640 {
+			display: none;
+		}
 	}
 
 	&::after {
@@ -96,6 +113,11 @@ h2 {
 			background-image: url(../img/star-d.png);
 		}
 	}
+}
+
+img {
+	display: block;
+	max-width: 100%;
 }
 
 a {
@@ -128,20 +150,25 @@ button {
 	padding: 0;
 	border: none;
 	background-color: transparent;
+	line-height: 1;
 }
 
 .btn {
+	display: inline-block;
 	text-transform: uppercase;
 
 	&--primary,
 	&--secondary {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 		height: 50px;
+		line-height: 50px;
 		font-size: 12px;
 		font-weight: 700;
-		padding-top: 19px;
-		padding-bottom: 19px;
 		text-align: center;
 		text-decoration: none;
+		transition: background-color .2s ease;
 
 		&:hover {
 			text-decoration: none;
@@ -155,6 +182,10 @@ button {
 		padding-left: 13px;
 		padding-right: 13px;
 		position: relative;
+
+		&:hover {
+			background-color: #dd8c42;
+		}
 
 		&::after {
 			content: '';
@@ -174,6 +205,10 @@ button {
 		border: 1px solid;
 		padding-left: 24px;
 		padding-right: 24px;
+
+		&:hover {
+			background-color: $light-gray;
+		}
 	}
 
 	&--icon {
@@ -199,6 +234,9 @@ input {
 	height: 30px;
 	padding: 5px 10px;
 	width: 180px;
+	@include _640 {
+		width: 100%;
+	}
 }
 
 .input-group {
@@ -226,4 +264,40 @@ input {
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 50px;
+	@include _640 {
+		margin-bottom: 36px;
+	}
+}
+
+.section-slider-actions {
+	display: flex;
+	gap: 30px;
+	@include _640 {
+		display: none;
+	}
+
+	.swiper-button {
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin-top: 0;
+	}
+}
+
+.swiper-button {
+	color: $dark-gray;
+	height: 36px;
+	width: 36px;
+
+	&::after {
+		display: none;
+	}
+
+	.icon {
+		stroke-width: 1.8px;
+		stroke: currentColor;
+		height: 100%;
+		width: 100%;
+	}
 }

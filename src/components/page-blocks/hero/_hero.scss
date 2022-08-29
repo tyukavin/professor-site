@@ -5,4 +5,163 @@
 	background-size: contain;
 	min-height: 700px;
 	margin-bottom: 70px;
+	@include _640 {
+		background-size: cover;
+		margin-bottom: 50px;
+	}
+
+	&-slider {
+		position: relative;
+		@include _640 {
+			padding-bottom: 130px;
+		}
+
+		&__nav {
+			position: absolute;
+			bottom: 30px;
+			left: 0;
+			display: flex;
+			align-items: center;
+			gap: 80px;
+			@include _640 {
+				bottom: 0;
+				justify-content: space-between;
+				gap: 0;
+				width: 100%;
+			}
+
+			.swiper-pagination {
+				position: relative;
+				top: auto;
+				left: auto;
+				bottom: auto;
+				height: 24px;
+				@include _640 {
+					flex: none;
+					width: auto;
+				}
+			}
+
+			.swiper-pagination-bullet {
+				background-color: #484848;
+				display: inline-block;
+				cursor: pointer;
+				height: 24px;
+				width: 24px;
+				margin: 0 5px !important;
+
+				&-active {
+					background: #d1d1d1;
+					position: relative;
+					opacity: 1;
+
+					&::before,
+					&::after {
+						content: '';
+						border-radius: 50%;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
+
+					&::before {
+						height: 16px;
+						width: 16px;
+						opacity: .3;
+						background-color: $dark-gray;
+					}
+
+					&::after {
+						height: 8px;
+						width: 8px;
+						background-color: $dark-gray;
+					}
+				}
+			}
+		}
+
+		&__item {
+			display: flex;
+			@include _640 {
+				flex-direction: column;
+			}
+		}
+
+		&__col {
+			position: relative;
+			
+			&:first-child {
+				max-width: 700px;
+				padding-top: 100px;
+				@include _640 {
+					padding-top: 24px;
+				}
+			}
+
+			&:last-child {
+				flex: 1 1 auto;
+				text-align: center;
+
+				img {
+					vertical-align: bottom;
+				}
+			}
+		}
+
+		&__title {
+			margin-bottom: 12px;
+
+			span {
+				color: $green;
+			}
+		}
+
+		&__text {
+			font-size: 18px;
+			margin-bottom: 36px;
+			@include _640 {
+				font-size: 16px;
+				margin-bottom: 26px;
+			}
+		}
+
+		&__img {
+			margin-left: 145px;
+			@include _640 {
+				margin-left: auto;
+				max-width: 85%;
+			}
+		}
+
+		&__actions {
+			@include _640 {
+				position: absolute;
+				top: 205%;
+				z-index: 9;
+				width: 100%;
+
+				.btn {
+					height: 66px;
+					width: 100%;
+				}
+			}
+		}
+
+		.info-list {
+			margin-bottom: 50px;
+			@include _640 {
+				margin-bottom: 15px;
+			}
+		}
+
+		.art-30 {
+			position: absolute;
+			top: 40px;
+			left: 0;
+			@include _640 {
+				max-width: 100px;
+			}
+		}
+	}
 }

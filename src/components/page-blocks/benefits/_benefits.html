@@ -6,110 +6,162 @@
 		<div class="benefits-content">
 			<div class="benefits-content__item">
 				@@include('../_svg-icon.html', { "name": "ben-prof" })
-				<div class="benefits-content__title">Профессионализм</div>
-				<div class="benefits-content__desc">
-					Врачи с глубокими научными знаниями, большим практическим опытом лечебной, клинической работы
+				<div class="benefits-content__wrap">
+					<div class="benefits-content__title">Профессионализм</div>
+					<div class="benefits-content__desc">
+						Врачи с глубокими научными знаниями, большим практическим опытом лечебной, клинической работы
+					</div>
 				</div>
 			</div>
 			<div class="benefits-content__item">
 				@@include('../_svg-icon.html', { "name": "ben-lab" })
-				<div class="benefits-content__title">Собственная лаборатория</div>
-				<div class="benefits-content__desc">
-					Клинический, гормональный, биохимический анализ крови и исследования биоматериалов проводим в медицинском центре. Анализ проводится уже через 40-50 минут после забора биоматериала
+				<div class="benefits-content__wrap">
+					<div class="benefits-content__title">Собственная лаборатория</div>
+					<div class="benefits-content__desc">
+						Клинический, гормональный, биохимический анализ крови и исследования биоматериалов проводим в медицинском центре. Анализ проводится уже через 40-50 минут после забора биоматериала
+					</div>
 				</div>
 			</div>
 			<div class="benefits-content__item">
 				@@include('../_svg-icon.html', { "name": "ben-diag" })
-				<div class="benefits-content__title">Оперативная диагностика</div>
-				<div class="benefits-content__desc">
-					Применяем высокоточное лабораторное оборудование для точных диагностических исследований и постановки диагноза
+				<div class="benefits-content__wrap">
+					<div class="benefits-content__title">Оперативная диагностика</div>
+					<div class="benefits-content__desc">
+						Применяем высокоточное лабораторное оборудование для точных диагностических исследований и постановки диагноза
+					</div>
 				</div>
 			</div>
 			<div class="benefits-content__item">
 				@@include('../_svg-icon.html', { "name": "ben-oborud" })
-				<div class="benefits-content__title">Современное оборудование</div>
-				<div class="benefits-content__desc">
-					Используем аппараты и лабораторное оборудование известных компаний по производству медицинской техники
+				<div class="benefits-content__wrap">
+					<div class="benefits-content__title">Современное оборудование</div>
+					<div class="benefits-content__desc">
+						Используем аппараты и лабораторное оборудование известных компаний по производству медицинской техники
+					</div>
 				</div>
 			</div>
 			<div class="benefits-content__item">
 				@@include('../_svg-icon.html', { "name": "ben-service" })
-				<div class="benefits-content__title">Широкий комплекс услуг</div>
-				<div class="benefits-content__desc">
-					Спектр услуг медицинской помощи: прием врачей разных специальностей, лабораторные и диагностические исследования, лечение и профилактика заболеваний. 
+				<div class="benefits-content__wrap">
+					<div class="benefits-content__title">Широкий комплекс услуг</div>
+					<div class="benefits-content__desc">
+						Спектр услуг медицинской помощи: прием врачей разных специальностей, лабораторные и диагностические исследования, лечение и профилактика заболеваний. 
+					</div>
 				</div>
 			</div>
 			<div class="benefits-content__item">
 				@@include('../_svg-icon.html', { "name": "ben-scince" })
-				<div class="benefits-content__title">Развитие в научной сфере</div>
-				<div class="benefits-content__desc">
-					Наши врачи – практикующие профессора и доценты, ведущие научную деятельность. 
+				<div class="benefits-content__wrap">
+					<div class="benefits-content__title">Развитие в научной сфере</div>
+					<div class="benefits-content__desc">
+						Наши врачи – практикующие профессора и доценты, ведущие научную деятельность. 
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="section-head">
 			<h2 class="title">Специалисты высшей квалификации</h2>
+			<div class="section-slider-actions">
+				<div class="swiper-button swiper-button-prev">
+					@@include('../_svg-icon.html', { "name": "arrow-left" })
+				</div>
+				  <div class="swiper-button swiper-button-next">
+					@@include('../_svg-icon.html', { "name": "arrow-right" })
+				</div>
+			</div>
 		</div>
-		<div class="spec-slider">
-			<div class="spec-slider__item">
-				<div class="spec-slider__img">
-					<img src="/img/doc-img-1.png" alt="Шерстнов">
+		<div class="spec-slider swiper">
+			<div class="swiper-wrapper">
+				<div class="spec-slider__item swiper-slide">
+					<div class="spec-slider__img">
+						<img src="img/doc-img-1.png" alt="Шерстнов">
+						<div class="spec-slider__link">
+							<button class="btn btn--primary">Запись на прием</button>
+						</div>
+					</div>
+					<div class="spec-slider__caption">
+						<strong>Шерстнов</strong>
+						Михаил Юрьевич
+					</div>
+					<div class="spec-slider__desc">
+						Врач-онколог, маммолог, хирург
+					</div>
+					<div class="spec-slider__sub">
+						Кандидат медицинских наук, доцент
+					</div>
 				</div>
-				<div class="spec-slider__caption">
-					<strong>Шерстнов</strong>
-					Михаил Юрьевич
+				<div class="spec-slider__item swiper-slide">
+					<div class="spec-slider__img">
+						<img src="img/doc-img-2.png" alt="Зыков">
+						<div class="spec-slider__link">
+							<button class="btn btn--primary">Запись на прием</button>
+						</div>
+					</div>
+					<div class="spec-slider__caption">
+						<strong>Зыков</strong>
+						Александр Васильевич
+					</div>
+					<div class="spec-slider__desc">
+						Врач-физиотерапевт
+					</div>
+					<div class="spec-slider__sub">
+						Врач высшей категории
+					</div>
 				</div>
-				<div class="spec-slider__desc">
-					Врач-онколог, маммолог, хирург
+				<div class="spec-slider__item swiper-slide">
+					<div class="spec-slider__img">
+						<img src="img/doc-img-3.png" alt="Кожевников ">
+						<div class="spec-slider__link">
+							<button class="btn btn--primary">Запись на прием</button>
+						</div>
+					</div>
+					<div class="spec-slider__caption">
+						<strong>Кожевников</strong>
+						Дмитрий Сергеевич
+					</div>
+					<div class="spec-slider__desc">
+						Ангиолог, Флеболог, сосудистый хирург
+					</div>
+					<div class="spec-slider__sub">
+						Врач высшей категории
+					</div>
 				</div>
-				<div class="spec-slider__sub">
-					Кандидат медицинских наук, доцент
+				<div class="spec-slider__item swiper-slide">
+					<div class="spec-slider__img">
+						<img src="img/doc-img-4.png" alt="Чубарова">
+						<div class="spec-slider__link">
+							<button class="btn btn--primary">Запись на прием</button>
+						</div>
+					</div>
+					<div class="spec-slider__caption">
+						<strong>Чубарова</strong>
+						Юлия Олеговна
+					</div>
+					<div class="spec-slider__desc">
+						Врач-косметолог, трихолог
+					</div>
+					<div class="spec-slider__sub">
+						Врачебный стаж более 5 лет
+					</div>
 				</div>
-			</div>
-			<div class="spec-slider__item">
-				<div class="spec-slider__img">
-					<img src="/img/doc-img-2.png" alt="Зыков">
-				</div>
-				<div class="spec-slider__caption">
-					<strong>Зыков</strong>
-					Александр Васильевич
-				</div>
-				<div class="spec-slider__desc">
-					Врач-физиотерапевт
-				</div>
-				<div class="spec-slider__sub">
-					Врач высшей категории
-				</div>
-			</div>
-			<div class="spec-slider__item">
-				<div class="spec-slider__img">
-					<img src="/img/doc-img-3.png" alt="Кожевников ">
-				</div>
-				<div class="spec-slider__caption">
-					<strong>Кожевников</strong>
-					Дмитрий Сергеевич
-				</div>
-				<div class="spec-slider__desc">
-					Ангиолог, Флеболог, сосудистый хирург
-				</div>
-				<div class="spec-slider__sub">
-					Врач высшей категории
-				</div>
-			</div>
-			<div class="spec-slider__item">
-				<div class="spec-slider__img">
-					<img src="/img/doc-img-4.png" alt="Чубарова">
-				</div>
-				<div class="spec-slider__caption">
-					<strong>Чубарова</strong>
-					Юлия Олеговна
-				</div>
-				<div class="spec-slider__desc">
-					Врач-косметолог, трихолог
-				</div>
-				<div class="spec-slider__sub">
-					Врачебный стаж более 5 лет
+				<div class="spec-slider__item swiper-slide">
+					<div class="spec-slider__img">
+						<img src="img/doc-img-4.png" alt="Чубарова">
+						<div class="spec-slider__link">
+							<button class="btn btn--primary">Запись на прием</button>
+						</div>
+					</div>
+					<div class="spec-slider__caption">
+						<strong>Чубарова</strong>
+						Юлия Олеговна
+					</div>
+					<div class="spec-slider__desc">
+						Врач-косметолог, трихолог
+					</div>
+					<div class="spec-slider__sub">
+						Врачебный стаж более 5 лет
+					</div>
 				</div>
 			</div>
 		</div>
@@ -117,7 +169,7 @@
 		<div class="tour">
 			<div class="tour-head">3D-тур по клинике</div>
 			<div class="tour-content">
-				<img src="/img/tour.jpg" alt="3D-тур по клинике">
+				<img src="img/tour.jpg" alt="3D-тур по клинике">
 			</div>
 		</div>
 	</div>

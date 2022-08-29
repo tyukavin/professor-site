@@ -1,17 +1,37 @@
 .stock {
 	background-color: $bege;
 	padding: 90px 0 70px;
+	@include _640 {
+		padding: 50px 0;
+	}
+
+	&-wrap {
+		position: relative;
+	}
 
 	&-slider {
 		display: flex;
 
 		&__item {
 			color: $dark-gray;
+			width: 320px !important;
+			@include _640 {
+				width: 80%;
+			}
+
+			&--large {
+				width: 692px !important;
+			}
 		}
 
 		&__img {
 			margin-bottom: 16px;
 			min-height: 300px;
+
+			img {
+				display: block;
+				max-width: 100%;
+			}
 		}
 
 		&__caption {
@@ -19,12 +39,18 @@
 			font-weight: 600;
 			margin-bottom: 6px;
 			text-transform: uppercase;
+			@include _640 {
+				font-size: 14px;
+			}
 		}
 
 		&__desc {
 			font-size: 14px;
 			font-weight: 400;
 			margin-bottom: 24px;
+			@include _640 {
+				font-size: 12px;
+			}
 		}
 
 		&__link {
@@ -32,6 +58,21 @@
 			font-weight: 600;
 			text-transform: uppercase;
 			text-decoration: underline;
+		}
+	}
+
+	.swiper-button {
+		top: 155px;
+		@include _640 {
+			display: none;
+		}
+
+		&-prev {
+			left: -65px;
+		}
+
+		&-next {
+			right: -65px;
 		}
 	}
 }

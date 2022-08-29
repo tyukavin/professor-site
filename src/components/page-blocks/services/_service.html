@@ -4,25 +4,301 @@
 			<h2 class="title title--dark">Наши услуги</h2>
 		</div>
 		<div class="service-tabs">
-			<div class="service-tab is-active">
+			<div class="service-tab js-service-tab-item is-active" id="service-docs">
 				@@include('../_svg-icon.html', { "name": "doc" })
 				<span>Врачи</span>
 			</div>
-			<div class="service-tab">
+			<div class="service-tab js-service-tab-item" id="service-proc">
 				@@include('../_svg-icon.html', { "name": "services" })
 				<span>Лечебные процедуры</span>
 			</div>
-			<div class="service-tab">
+			<div class="service-tab js-service-tab-item" id="service-an">
 				@@include('../_svg-icon.html', { "name": "analyses" })
 				<span>Анализы</span>
 			</div>
-			<div class="service-tab">
+			<div class="service-tab js-service-tab-item" id="service-diag">
 				@@include('../_svg-icon.html', { "name": "diagnostics" })
 				<span>Диагностика</span>
 			</div>
 		</div>
 		<div class="service-content">
-			<div class="service-content__item"></div>
+			<div class="service-content__item js-service-tab-content is-active service-docs">
+				<div class="service-content__col">
+					<ul class="list-service">
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--feet" })
+								<span>Ангиолог ( флеболог)</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--andrology" })
+								<span>Андролог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--gastro" })
+								<span>Гастроэнтеролог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--blood" })
+								<span>Гематолог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--gynekologist" })
+								<span>Гинеколог</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="service-content__col">
+					<ul class="list-service">
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--endokrinology" })
+								<span>Гинеколог- эндокринолог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--endokrinology" })
+								<span>Дерматолог - эндокринолог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--diabet" })
+								<span>Диабетолог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--cardiology" })
+								<span>Кардиолог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--ent" })
+								<span>ЛОР</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="service-content__col">
+					<ul class="list-service">
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--ent-f" })
+								<span>ЛОР-фониатр</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--mamology" })
+								<span>Маммолог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--neurologist" })
+								<span>Невролог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--cancer" })
+								<span>Онколог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--proctology" })
+								<span>Проктолог</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="service-content__col">
+					<ul class="list-service">
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--psy" })
+								<span>Психотерапевт</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--therapist-psy" })
+								<span>Психотерапевт - психолог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--lung" })
+								<span>Пульмонолог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--joint" })
+								<span>Ревматолог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--sexologist" })
+								<span>Сексолог</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="service-content__col">
+					<ul class="list-service">
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--therapist" })
+								<span>Терапевт</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--hair" })
+								<span>Трихолог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--urologist" })
+								<span>Уролог</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--surgeon" })
+								<span>Хирург</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--endokrinology" })
+								<span>Эндокринолог</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="service-content__item js-service-tab-content service-proc">2</div>
+			<div class="service-content__item js-service-tab-content service-an">
+				<div class="service-content__col">
+					<ul class="list-service">
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--urine-test" })
+								<span>Анализ мочи</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--blood" })
+								<span>Анализы крови</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--endokrinology" })
+								<span>Гормональные исследования щитовидной железы</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--injection" })
+								<span>Инъекции</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="service-content__col">
+					<ul class="list-service">
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--cancer" })
+								<span>Онкомаркеры</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--sperm-test" })
+								<span>Исследования спермы</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--fecal" })
+								<span>Исследования кала</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="service-content__item js-service-tab-content service-diag">
+				<div class="service-content__col">
+					<ul class="list-service">
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--biopsy" })
+								<span>Биопсия и цитология</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--liver" })
+								<span>Эластография печени</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--ultrasound" })
+								<span>Ультразвуковыее исследования</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--cardiology" })
+								<span>ЭКГ</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="service-content__col">
+					<ul class="list-service">
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--stomach" })
+								<span>Эзофагогастродуоденоскопия гастроскопия(ЭГДС)</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--stomach-biopsy" })
+								<span>Гастробиопсия</span>
+							</a>
+						</li>
+						<li class="list-service__item">
+							<a href="javascript;">
+								@@include('../_svg-icon.html', { "name": "service--gynekologist" })
+								<span>Гинекологические исследования</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<div class="service-content__actions">
 				<button class="btn btn--primary">Запись на прием</button>
 			</div>
