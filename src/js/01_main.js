@@ -55,6 +55,24 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	(function() {
+		const header = document.querySelector(".header");
+
+		headerFixed();
+
+		function headerFixed() {
+			let heightOffset = window.pageXOffset;
+
+			console.log(heightOffset)
+
+			if (heightOffset > 0) {
+				header.classList.add("header-fixed");
+			} else {
+				header.classList.remove("header-fixed");
+			}
+		}
+	})();
+
+	(function() {
 		const btnMenuMobile = document.querySelector(".js-menu-mobile-button");
 		const menuMobile = document.querySelector(".js-menu-mobile")
 		let isOpened = false;

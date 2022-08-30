@@ -5,8 +5,14 @@ $green: #5F8D6E;
 $orange: #E8A05E;
 $bege: #F0EEE0;
 
+@mixin _1540 {
+	@media (max-width: 1540px){
+        @content;
+    }
+}
+
 @mixin _640 {
-    @media (max-width: 640px){
+	@media (max-width: 640px){
         @content;
     }
 }
