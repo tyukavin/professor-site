@@ -12,9 +12,15 @@
 			padding-bottom: 0;
 		}
 
-		.header-logo__caption,
+		.header-logo__caption {
+			display: none;
+		}
+		
 		.secondary-menu {
 			display: none;
+			@include _640 {
+				display: initial;
+			}
 		}
 	}
 
