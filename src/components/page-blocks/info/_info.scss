@@ -14,6 +14,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -17px;
+		@include _640 {
+			margin: 0;
+		}
 	}
 
 	&__col {
@@ -21,14 +24,21 @@
 		width: 50%;
 		@include _640 {
 			width: 100%;
+			padding: 0;
 		}
 
 		&--license {
-			order: 2;
+
+			@include _640 {
+				order: 2;
+			}
 		}
 
 		&--text {
-			order: 1;
+
+			@include _640 {
+				order: 1;
+			}
 		}
 	}
 

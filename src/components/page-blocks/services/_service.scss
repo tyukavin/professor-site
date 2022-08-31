@@ -135,6 +135,10 @@
 			&:hover {
 				color: $green;
 				text-decoration: none;
+
+				.icon {
+					filter: invert(51%) sepia(10%) saturate(1131%) hue-rotate(87deg) brightness(98%) contrast(90%);
+				}
 			}
 
 			span {

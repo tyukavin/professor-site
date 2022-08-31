@@ -1,298 +1,313 @@
-<header class="header container">
-	<div class="header-logo">
-		<a href="/" class="header-logo__img" title="На Главную">
-			<img src="img/logo.png" alt="Логотип Медицинского центра Профессор">
-			<div class="header-logo__text">Медицинский центр</div>
-		</a>
-		<div class="header-logo__caption">
-			Все врачи в  нашем центре –&nbsp;профессора!
+<header class="header">
+	<div class="header-container container">
+		<div class="header-logo">
+			<a href="/" class="header-logo__img" title="На Главную">
+				<img src="img/logo.png" alt="Логотип Медицинского центра Профессор">
+				<div class="header-logo__text">Медицинский центр</div>
+			</a>
+			<div class="header-logo__caption">
+				Все врачи в  нашем центре –&nbsp;профессора!
+			</div>
 		</div>
-	</div>
-
-	<div class="header-actions-mobile">
-		<button>
-			@@include('_svg-icon.html', { "name": "appointment" })
-		</button>
-		<a href="tel:+7999123456">
-			@@include('_svg-icon.html', { "name": "call" })
-		</a>
-		<button class="js-menu-mobile-button">
-			@@include('_svg-icon.html', { "name": "menu" })
-		</button>
-	</div>
-
-	<div class="header-main js-menu-mobile">
-		<div class="secondary-menu">
-			<nav>
-				<ul class="secondary-menu-list">
-					<li class="secondary-menu-list__item">
-						<a href="javascript;">О нас</a>
-					</li>
-					<li class="secondary-menu-list__item">
-						<a href="javascript;">Специалисты</a>
-					</li>
-					<li class="secondary-menu-list__item">
-						<a href="javascript;">Расписание специалистов</a>
-					</li>
-					<li class="secondary-menu-list__item">
-						<a href="javascript;">Режим работы</a>
-					</li>
-					<li class="secondary-menu-list__item">
-						<a href="javascript;">Отзывы</a>
-					</li>
-					<li class="secondary-menu-list__item">
-						<a href="javascript;">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<button class="btn btn--icon">
-				@@include('_svg-icon.html', { "name": "fa_eye" })
+	
+		<div class="header-actions-mobile">
+			<button>
+				@@include('_svg-icon.html', { "name": "appointment" })
+			</button>
+			<a href="tel:+7999123456">
+				@@include('_svg-icon.html', { "name": "call" })
+			</a>
+			<button class="js-menu-mobile-button">
+				<svg class="icon icon-menu">
+					<use xlink:href="img/sprite.svg#menu"/>
+				</svg>
+				<svg class="icon icon-cancel">
+					<use xlink:href="img/sprite.svg#cancel"/>
+				</svg>
 			</button>
 		</div>
-
-		<div class="info-menu">
-			<div class="info-menu-search">
-				<form action="">
-					<div class="input-group">
-						<input type="text">
-						@@include('_svg-icon.html', { "name": "fa_search" })
-					</div>
-				</form>
+	
+		<div class="header-main js-menu-mobile">
+			<div class="secondary-menu">
+				<nav>
+					<ul class="secondary-menu-list">
+						<li class="secondary-menu-list__item">
+							<a href="javascript;">О нас</a>
+						</li>
+						<li class="secondary-menu-list__item">
+							<a href="javascript;">Специалисты</a>
+						</li>
+						<li class="secondary-menu-list__item">
+							<a href="javascript;">Расписание специалистов</a>
+						</li>
+						<li class="secondary-menu-list__item">
+							<a href="javascript;">Режим работы</a>
+						</li>
+						<li class="secondary-menu-list__item">
+							<a href="javascript;">Отзывы</a>
+						</li>
+						<li class="secondary-menu-list__item">
+							<a href="javascript;">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="btn btn--icon">
+					@@include('_svg-icon.html', { "name": "fa_eye" })
+				</button>
 			</div>
-			<div class="info-menu-contact">
-				<div class="info-menu-contact__item">
-					@@include('_svg-icon.html', { "name": "fa_mail" })
-					<div class="info-menu-contact__main">
-						<div class="info-menu-contact__caption">
-							<a href="mailto:zapis@mcprofessor.ru">zapis@mcprofessor.ru</a>
+	
+			<div class="info-menu">
+				<div class="info-menu-search">
+					<form action="">
+						<div class="input-group">
+							<input type="text">
+							@@include('_svg-icon.html', { "name": "fa_search" })
+						</div>
+					</form>
+				</div>
+				<div class="info-menu-contact">
+					<div class="info-menu-contact__item">
+						@@include('_svg-icon.html', { "name": "fa_mail" })
+						<div class="info-menu-contact__main">
+							<div class="info-menu-contact__caption">
+								<a href="mailto:zapis@mcprofessor.ru">zapis@mcprofessor.ru</a>
+							</div>
+						</div>
+					</div>
+					<div class="info-menu-contact__item">
+						@@include('_svg-icon.html', { "name": "fa_map" })
+						<div class="info-menu-contact__main">
+							<div class="info-menu-contact__desc">м. Чернышевская</div>
+							<div class="info-menu-contact__caption">ул. Чайковского, 42</div>
+						</div>
+					</div>
+					<div class="info-menu-contact__item">
+						@@include('_svg-icon.html', { "name": "fa_clock" })
+						<div class="info-menu-contact__main">
+							<div class="info-menu-contact__desc">Время работы</div>
+							<div class="info-menu-contact__caption">пн-пт: 9-21, сб: 9-20, вс: 9-19</div>
 						</div>
 					</div>
 				</div>
-				<div class="info-menu-contact__item">
-					@@include('_svg-icon.html', { "name": "fa_map" })
-					<div class="info-menu-contact__main">
-						<div class="info-menu-contact__desc">м. Чернышевская</div>
-						<div class="info-menu-contact__caption">ул. Чайковского, 42</div>
-					</div>
+				<div class="info-menu-social">
+					<a href="javascript;" class="link-icon" title="Telegram">
+						@@include('_svg-icon.html', { "name": "telegram" })
+					</a>
+					<a href="javascript;" class="link-icon" title="Viber">
+						@@include('_svg-icon.html', { "name": "viber" })
+					</a>
+					<a href="javascript;" class="link-icon" title="Whats App">
+						@@include('_svg-icon.html', { "name": "whatsapp" })
+					</a>
 				</div>
-				<div class="info-menu-contact__item">
-					@@include('_svg-icon.html', { "name": "fa_clock" })
-					<div class="info-menu-contact__main">
-						<div class="info-menu-contact__desc">Время работы</div>
-						<div class="info-menu-contact__caption">пн-пт: 9-21, сб: 9-20, вс: 9-19</div>
-					</div>
+				<div class="info-menu-phones">
+					<a href="tel:+7 (812) 272-70-24">+7 (812) 272-70-24</a>
+					<a href="tel:+7 (812) 272-37-34">+7 (812) 272-37-34</a>
+					<a href="tel:+7 (812) 275-86-96">+7 (812) 275-86-96</a>
 				</div>
 			</div>
-			<div class="info-menu-social">
-				<a href="javascript;" class="link-icon" title="Telegram">
-					@@include('_svg-icon.html', { "name": "telegram" })
-				</a>
-				<a href="javascript;" class="link-icon" title="Viber">
-					@@include('_svg-icon.html', { "name": "viber" })
-				</a>
-				<a href="javascript;" class="link-icon" title="Whats App">
-					@@include('_svg-icon.html', { "name": "whatsapp" })
-				</a>
-			</div>
-			<div class="info-menu-phones">
-				<a href="tel:+7 (812) 272-70-24">+7 (812) 272-70-24</a>
-				<a href="tel:+7 (812) 272-37-34">+7 (812) 272-37-34</a>
-				<a href="tel:+7 (812) 275-86-96">+7 (812) 275-86-96</a>
-			</div>
-		</div>
-		<div class="primary-menu">
-			<nav class="header-menu">
-				<ul class="header-menu__wrap">
-					<li class="header-menu__item header-menu__item--inner">
-						<a href="javascript;">Врачи</a>
-						<div class="inner-menu">
-							<div class="service-content">
-								<div class="service-content__item">
-									<div class="service-content__col">
-										<ul class="list-service">
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--feet" })
-													<span>Ангиолог ( флеболог)</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--andrology" })
-													<span>Андролог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--gastro" })
-													<span>Гастроэнтеролог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--blood" })
-													<span>Гематолог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--gynekologist" })
-													<span>Гинеколог</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="service-content__col">
-										<ul class="list-service">
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--endokrinology" })
-													<span>Гинеколог- эндокринолог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--endokrinology" })
-													<span>Дерматолог - эндокринолог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--diabet" })
-													<span>Диабетолог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--cardiology" })
-													<span>Кардиолог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--ent" })
-													<span>ЛОР</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="service-content__col">
-										<ul class="list-service">
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--ent-f" })
-													<span>ЛОР-фониатр</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--mamology" })
-													<span>Маммолог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--neurologist" })
-													<span>Невролог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--cancer" })
-													<span>Онколог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--proctology" })
-													<span>Проктолог</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="service-content__col">
-										<ul class="list-service">
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--psy" })
-													<span>Психотерапевт</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--therapist-psy" })
-													<span>Психотерапевт - психолог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--lung" })
-													<span>Пульмонолог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--joint" })
-													<span>Ревматолог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--sexologist" })
-													<span>Сексолог</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="service-content__col">
-										<ul class="list-service">
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--therapist" })
-													<span>Терапевт</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--hair" })
-													<span>Трихолог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--urologist" })
-													<span>Уролог</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--surgeon" })
-													<span>Хирург</span>
-												</a>
-											</li>
-											<li class="list-service__item">
-												<a href="javascript;">
-													@@include('_svg-icon.html', { "name": "service--endokrinology" })
-													<span>Эндокринолог</span>
-												</a>
-											</li>
-										</ul>
+			<div class="primary-menu">
+				<nav class="header-menu">
+					<div class="header-menu-back">
+						<button class="btn-menu-back">
+							<svg class="icon">
+								<use xlink:href="img/sprite.svg#back"/>
+							</svg>
+							<span>Назад</span>
+						</button>
+					</div>
+					<ul class="header-menu__wrap">
+						<li class="header-menu__item header-menu__item--inner">
+							<a href="javascript;">Врачи</a>
+							<div class="inner-menu">
+								<div class="service-content">
+									<div class="service-content__item">
+										<div class="service-content__col">
+											<ul class="list-service">
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--feet" })
+														<span>Ангиолог ( флеболог)</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--andrology" })
+														<span>Андролог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--gastro" })
+														<span>Гастроэнтеролог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--blood" })
+														<span>Гематолог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--gynekologist" })
+														<span>Гинеколог</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="service-content__col">
+											<ul class="list-service">
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--endokrinology" })
+														<span>Гинеколог- эндокринолог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--endokrinology" })
+														<span>Дерматолог - эндокринолог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--diabet" })
+														<span>Диабетолог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--cardiology" })
+														<span>Кардиолог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--ent" })
+														<span>ЛОР</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="service-content__col">
+											<ul class="list-service">
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--ent-f" })
+														<span>ЛОР-фониатр</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--mamology" })
+														<span>Маммолог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--neurologist" })
+														<span>Невролог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--cancer" })
+														<span>Онколог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--proctology" })
+														<span>Проктолог</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="service-content__col">
+											<ul class="list-service">
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--psy" })
+														<span>Психотерапевт</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--therapist-psy" })
+														<span>Психотерапевт - психолог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--lung" })
+														<span>Пульмонолог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--joint" })
+														<span>Ревматолог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--sexologist" })
+														<span>Сексолог</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="service-content__col">
+											<ul class="list-service">
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--therapist" })
+														<span>Терапевт</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--hair" })
+														<span>Трихолог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--urologist" })
+														<span>Уролог</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--surgeon" })
+														<span>Хирург</span>
+													</a>
+												</li>
+												<li class="list-service__item">
+													<a href="javascript;">
+														@@include('_svg-icon.html', { "name": "service--endokrinology" })
+														<span>Эндокринолог</span>
+													</a>
+												</li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</li>
-					<li class="header-menu__item header-menu__item--inner"><a href="javascript;">Лечебные процедуры</a></li>
-					<li class="header-menu__item header-menu__item--inner"><a href="javascript;">Анализы</a></li>
-					<li class="header-menu__item header-menu__item--inner"><a href="javascript;">Диагностика</a></li>
-					<li class="header-menu__item"><a href="javascript;">Акции</a></li>
-					<li class="header-menu__item"><a href="javascript;">Цены</a></li>
-					<li class="header-menu__item"><a href="javascript;">Пациентам</a></li>
-				</ul>
-			</nav>
-			<div class="header-actions">
-				<button class="btn btn--primary">Запись на прием</button>
-				<button class="btn btn--secondary">Обратный звонок</button>
+						</li>
+						<li class="header-menu__item header-menu__item--inner"><a href="javascript;">Лечебные процедуры</a></li>
+						<li class="header-menu__item header-menu__item--inner"><a href="javascript;">Анализы</a></li>
+						<li class="header-menu__item header-menu__item--inner"><a href="javascript;">Диагностика</a></li>
+						<li class="header-menu__item"><a href="javascript;">Акции</a></li>
+						<li class="header-menu__item"><a href="javascript;">Цены</a></li>
+						<li class="header-menu__item"><a href="javascript;">Пациентам</a></li>
+					</ul>
+				</nav>
+				<div class="header-actions">
+					<button class="btn btn--primary">Запись на прием</button>
+					<button class="btn btn--secondary">Обратный звонок</button>
+				</div>
 			</div>
 		</div>
 	</div>
